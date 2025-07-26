@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl font-bold">Welcome to My Website</h1>
+            <p class="mt-2">A simple and clean landing page</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-6">
+        
+        <!-- Hero Section -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Hello, I'm a Beginner!</h2>
+            <p class="text-gray-600 mb-6">
+                This is my first landing page using HTML, Tailwind CSS, and JavaScript. 
+                It's simple, clean, and easy to understand.
+            </p>
+            <button id="clickBtn" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                Click Me!
+            </button>
+        </section>
+
+        <!-- Features Section -->
+        <section class="grid md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-4xl mb-4">🚀</div>
+                <h3 class="text-xl font-bold mb-2">Fast</h3>
+                <p class="text-gray-600">Quick and responsive design</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-4xl mb-4">💡</div>
+                <h3 class="text-xl font-bold mb-2">Simple</h3>
+                <p class="text-gray-600">Easy to understand and use</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">Beautiful</h3>
+                <p class="text-gray-600">Clean and modern design</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+            <p class="text-gray-600 mb-6">Want to learn more? Send me a message!</p>
+            <button id="contactBtn" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+                Contact Me
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-8">
+        <p>&copy; 2024 My Simple Website. Made with ❤️</p>
+    </footer>
+
+    <!-- Simple JavaScript -->
+    <script>
+        // Get the buttons
+        const clickBtn = document.getElementById('clickBtn');
+        const contactBtn = document.getElementById('contactBtn');
+
+        // Add click event to the first button
+        clickBtn.addEventListener('click', function() {
+            alert('Hello! You clicked the button! 🎉');
+        });
+
+        // Add click event to the contact button
+        contactBtn.addEventListener('click', function() {
+            alert('Thanks for your interest! This is just a demo. 📧');
+        });
+    </script>
+
+</body>
+</html>
